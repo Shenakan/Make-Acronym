@@ -1,0 +1,12 @@
+def main():
+    name = input("Enter your name: ")
+    print(get_name(name))
+
+def get_name(name):
+    acron = ""
+    for palabra in name.split(" "):
+        acron += (palabra[0])
+    return acron
+
+if __name__ == '__main__':
+    main()
